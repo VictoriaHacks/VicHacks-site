@@ -2,6 +2,7 @@ import Image from "next/image";
 import TestComponent from "@/components/TestComponent/TestComponent";
 import Footer from "@/components/Footer/Footer";
 import SignUp from "@/components/SignUp/SignUp";
+import Streams from "@/components/Streams/Streams";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <TestComponent></TestComponent>
       <p className="text-purple-light">Poppins</p>
       <SignUp></SignUp>
+      <Streams></Streams>
       <Footer></Footer>
     </main>
   );
