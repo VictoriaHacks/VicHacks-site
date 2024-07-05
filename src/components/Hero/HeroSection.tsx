@@ -22,11 +22,11 @@ const GRID_CENTER_OFFSET = 0.471
 
 function Navbar() {
   return (
-    <div className="fixed w-full top-0 flex justify-between p-5 xs:p-10 z-10">
+    <div className="fixed w-full top-0 flex justify-between p-5 xs:p-10 z-20">
       <div className="space-y-1">
         <p className="">11/06 - 15/06</p>
         <h3 className="text-xl sm:text-2xl font-display">VICHACK</h3>
-        <Image className="max-w-12 xs:max-w-none" src={TrianglesImage} alt="Shape"/>
+        <Image className="max-w-12 xs:max-w-16" src={TrianglesImage} alt="Shape"/>
       </div>
       <div className="flex gap-1 flex-col text-right font-bold sticky top-0">
         <Link href="#">HOME</Link>
@@ -76,7 +76,7 @@ export default function HeroSection() {
       {/* Grid image, the position of all other static elements are relative to the center of the grid */}
       <PerspectiveGrid ref={gridRef} className="absolute w-full min-h-[640px] h-[125%] top-[-20%] sm:top-1/2 sm:-translate-y-1/2 md:top-0 md:-translate-y-0 left-1/2 -translate-x-1/2"/>
       
-      <div className="relative flex flex-col w-full min-h-svh gap-10 z-2">
+      <div className="relative flex flex-col w-full min-h-svh gap-10 z-10">
         {/* The padding top of this element is responsible for pushing all other static elements down */}
         <Image ref={logoRef} src={LogoImage} alt="VicHack Logo" className="w-[300px] xs:w-[360px] md:w-[480px] mx-auto" style={{
           paddingTop: logoY + 'px',
@@ -103,8 +103,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-
-      {/* <ParallaxAnimator className="left-[15vw] top-[max(100px,20svh)] md:left-[30vw] md:top-[max(185px,25svh)]" speed={100}>
+      <ParallaxAnimator className="left-[15vw] top-[max(100px,20svh)] md:left-[30vw] md:top-[max(185px,25svh)]" speed={100}>
         <Image src={SawBladeImage} alt="Shape"/>
       </ParallaxAnimator>
 
@@ -112,7 +111,7 @@ export default function HeroSection() {
         <Image src={LightningImage} alt="Shape"/>
       </ParallaxAnimator>
 
-      <ParallaxAnimator className="left-[70vw] top-[max(259px,70svh)] md:left-[10vw] md:top-[max(259px,35svh)]" speed={600}>
+      <ParallaxAnimator className="left-[70vw] top-[max(259px,65svh)] md:left-[10vw] md:top-[max(259px,35svh)]" speed={600}>
         <Image src={FlowerImage} alt="Shape"/>
       </ParallaxAnimator>
 
@@ -120,11 +119,9 @@ export default function HeroSection() {
         <Image src={GridCircleImage} alt="Shape"/>
       </ParallaxAnimator>
 
-      <ParallaxAnimator className="left-[70vw] top-[max(100px,15svh)] md:left-[20vw] md:top-[max(481px,65svh)]" speed={1500}>
+      <ParallaxAnimator className="left-[70vw] top-[max(100px,18svh)] md:left-[20vw] md:top-[max(481px,65svh)]" speed={1500}>
         <Image src={FlowerThinImage} alt="Shape"/>
-      </ParallaxAnimator> */}
-
-      
+      </ParallaxAnimator>
     </div>
   );
 }
