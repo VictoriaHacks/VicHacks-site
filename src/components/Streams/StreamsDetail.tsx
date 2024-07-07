@@ -11,8 +11,14 @@ const StreamsDetail: React.FC<StreamsDetailProps> = ({ streams }) => {
     <div>
       {streams.map((stream) => (
         <div key={stream.id} className="flex flex-col lg:flex-row items-center gap-4 bg-gray-100 p-4 rounded-lg mb-4">
-          <div className="w-full lg:w-1/2 center">
-            <Image src={stream.image} alt={stream.name} className="rounded-lg w-full" width={300} height={200} />
+          <div className="relative w-full lg:w-1/2 h-60">
+            <Image
+              src={stream.image}
+              alt={stream.name}
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
             <h3 className="text-2xl font-bold">{stream.name}</h3>
