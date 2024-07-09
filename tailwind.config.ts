@@ -47,6 +47,9 @@ const config: Config = {
         sans: ["var(--font-poppins)"],
         display: ["var(--font-bernoru)"],
       },
+      screens: {
+        'xs': '480px',
+      },
     },
   },
   plugins: [],
