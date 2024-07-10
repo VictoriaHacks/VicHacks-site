@@ -40,13 +40,13 @@ export default function Sponsors() {
         </p>
       </div>
       <div className="flex flex-col w-full mt-16">
-        {goldSponsors.map((value) => {
-          return <GoldSponsorBlock {...value} />;
+        {goldSponsors.map((value, index) => {
+          return <GoldSponsorBlock {...value} key={index} />;
         })}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-16 px-8 sm:px-0">
-        {silverSponsors.map((value) => {
-          return <SilverSponsorBlock {...value} />;
+        {silverSponsors.map((value, index) => {
+          return <SilverSponsorBlock {...value} key={index} />;
         })}
       </div>
     </section>

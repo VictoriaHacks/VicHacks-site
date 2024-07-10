@@ -15,10 +15,10 @@ export default function SignUp() {
           <Image src={center} alt="shape" />
           <h2 className=" font-display text-3xl">SIGN UP</h2>
           <p>
-            Join Victoria's best hackathon, learn industry leading skills, meet
-            and network aswell as help <b>shape</b> our future.
+            Join Victoria&apos;s best hackathon, learn industry leading skills,
+            meet and network as well as help <b>shape</b> our future.
           </p>
-          <p>And don't forget the crazy prizes for</p>
+          <p>And don&apos;t forget the crazy prizes for all our streams!</p>
           <Link
             href={"https://google.com"}
             className="grid place-co3ntent-center px-12 py-2 font-bold bg-yellow-dark rounded hover:scale-105 transition-all"
