@@ -12,19 +12,19 @@ export interface silverSponsorBlock {
 export default function SilverSponsorBlock(props: silverSponsorBlock) {
   return (
     <div>
-      <p className="font-bold text-sm">GOLD SPONSOR</p>
-      <div className="flex flex-row w-full gap-4">
-        <div className="flex flex-col gap-1 w-1/2 relative">
+      <p className="font-bold text-sm">SILVER SPONSOR</p>
+      <div className="flex flex-col w-full gap-4">
+        <div className="relative w-full h-64">
           <Image
             src={props.img}
             alt={props.alt}
             fill
-            className=" border rounded border-white"
+            className="border rounded border-white object-cover"
           />
         </div>
-        <div className="flex flex-col gap-2 justify-between w-1/2">
-          <h3 className=" font-display text-2xl">{props.title}</h3>
-          <p>{props.desc}</p>
+        <div className="flex flex-col gap-2 justify-between w-full">
+          <h3 className=" font-display text-xl">{props.title}</h3>
+          <p className="text-sm">{props.desc}</p>
         </div>
       </div>
     </div>

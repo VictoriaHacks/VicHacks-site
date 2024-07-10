@@ -4,7 +4,7 @@ import Image from "next/image";
 import center from "@/assets/shapes/center.svg";
 
 import GoldSponsorBlock, { goldSponsorBlock } from "./GoldSponsorBlock";
-import { silverSponsorBlock } from "./SilverSponsorBlock";
+import SilverSponsorBlock, { silverSponsorBlock } from "./SilverSponsorBlock";
 
 // Sponsors
 import testImg from "@/assets/sponsors/test.png";
@@ -12,15 +12,22 @@ import testImg from "@/assets/sponsors/test.png";
 export default function Sponsors() {
   const goldSponsors: goldSponsorBlock[] = [
     {
-      title: "OPTIVER",
+      title: "TESTER",
       img: testImg,
       alt: "test",
-      desc: "As one of the oldest market making firms in the world, Optiver has been improving financial markets since 1986. By providing liquidity to markets across the globe, we make them more efficient, transparent and stable.",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
       link: "test",
     },
   ];
 
-  const silverSponsors: silverSponsorBlock[] = [];
+  const silverSponsors: silverSponsorBlock[] = [
+    {
+      title: "TESTER",
+      img: testImg,
+      alt: "test",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    },
+  ];
 
   return (
     <section className="flex flex-col mx-auto max-w-screen-md items-center px-8">
@@ -35,6 +42,11 @@ export default function Sponsors() {
       <div className="flex flex-col w-full mt-16">
         {goldSponsors.map((value) => {
           return <GoldSponsorBlock {...value} />;
+        })}
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-16 px-8 sm:px-0">
+        {silverSponsors.map((value) => {
+          return <SilverSponsorBlock {...value} />;
         })}
       </div>
     </section>
