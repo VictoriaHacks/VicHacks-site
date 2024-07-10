@@ -4,11 +4,13 @@ import Footer from "@/components/Footer/Footer";
 import SignUp from "@/components/SignUp/SignUp";
 import HeroSection from "@/components/Hero/HeroSection";
 import Sponsors from "@/components/Sponsors/Sponsors";
+import PrizesSection from "@/components/Prizes/PrizesSection";
 
 export default function Home() {
   return (
     <main className="bg-black text-white">
       <HeroSection />
+      <PrizesSection className="my-80" />
       <Sponsors />
       <SignUp />
       <Footer />
