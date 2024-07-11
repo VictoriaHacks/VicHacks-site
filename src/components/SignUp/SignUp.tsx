@@ -9,7 +9,7 @@ import center from "@/assets/shapes/center.svg";
 
 export default function SignUp() {
   return (
-    <div className="relative my-8">
+    <div id="signUp" className="relative my-8">
       <section className="w-screen max-w-full flex flex-col items-center px-8 py-24">
         <div className="z-50 w-full text-center max-w-screen-sm border rounded border-white px-8 py-12 flex flex-col items-center gap-4">
           <Image src={center} alt="shape" />

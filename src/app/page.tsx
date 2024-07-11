@@ -8,7 +8,7 @@ import PrizesSection from "@/components/Prizes/PrizesSection";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="bg-black text-white w-screen max-w-full overflow-x-clip">
       <HeroSection />
       <PrizesSection className="my-80" />
       <Sponsors />

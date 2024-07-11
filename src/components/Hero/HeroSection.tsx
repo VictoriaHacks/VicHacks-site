@@ -52,6 +52,7 @@ export default function HeroSection() {
 
   return (
     <div
+      id="hero"
       className="transition-opacity duration-500"
       style={{
         // Hide the hero section until images are loaded and absolute positions are calculate

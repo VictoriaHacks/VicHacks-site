@@ -4,16 +4,29 @@ import Link from "next/link";
 import Image from "next/image";
 import TrianglesImage from "@/assets/hero-shapes/triangles.svg";
 
+const scrolltoHash = function (element_id: string) {
+  const element = document.getElementById(element_id);
+  element?.scrollIntoView({
+    behavior: "smooth",
+    block: "end",
+    inline: "nearest",
+  });
+};
+
 export default function Navbar() {
+  const scrollSensitivity = 200;
+
   const controls = useAnimation();
   const [lastScrollY, setLastScrollY] = useState(0);
   const [startScroll, setStartScroll] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY + 50) {
+      if (window.scrollY > lastScrollY + scrollSensitivity) {
         // Scrolling down
-        controls.start({ opacity: 0 }); // Adjust this value to move the navbar out of view
+        if (window.innerWidth < 768) {
+          controls.start({ opacity: 0 }); // Adjust this value to move the navbar out of view
+        }
         setLastScrollY(window.scrollY);
       } else if (window.scrollY < lastScrollY) {
         // Scrolling up
@@ -37,7 +50,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className={`fixed w-full top-0 flex justify-between p-5 xs:p-10 z-20 ${
+      className={`fixed w-full top-0 flex justify-between p-5 xs:p-10 max-w-full z-20 ${
         startScroll ? "bg-transparent" : "bg-black md:bg-transparent"
       }`}
       initial={{ opacity: 1 }}
@@ -54,9 +67,19 @@ export default function Navbar() {
         />
       </div>
       <div className="flex gap-1 flex-col text-right font-bold sticky top-0">
-        <Link href="#">HOME</Link>
-        <Link href="#">EDUCATION</Link>
-        <Link href="#">SIGN UP</Link>
+        <div
+          onClick={() => scrolltoHash("hero")}
+          className=" cursor-pointer hover:border-b-2 border-yellow-light transition-all"
+        >
+          HOME
+        </div>
+        {/* <Link href="#">EDUCATION</Link> */}
+        <div
+          onClick={() => scrolltoHash("signUp")}
+          className=" cursor-pointer hover:border-b-2 border-green-light transition-all"
+        >
+          SIGN UP
+        </div>
       </div>
     </motion.div>
   );
