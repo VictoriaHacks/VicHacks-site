@@ -44,7 +44,7 @@ export default function Sponsors() {
           return <GoldSponsorBlock {...value} key={index} />;
         })}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-16 px-8 sm:px-0">
+      <div className="flex flex-auto justify-center gap-8 mt-16 px-8 sm:px-0">
         {silverSponsors.map((value, index) => {
           return <SilverSponsorBlock {...value} key={index} />;
         })}
