@@ -17,7 +17,7 @@ const config: Config = {
         dark: "#C12499",
       },
       orange: {
-        light: "#F84944i",
+        light: "#F84944",
         dark: "#CD2826",
       },
       yellow: {
@@ -46,6 +46,9 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-poppins)"],
         display: ["var(--font-bernoru)"],
+      },
+      screens: {
+        'xs': '480px',
       },
     },
   },

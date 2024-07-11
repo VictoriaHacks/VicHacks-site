@@ -3,16 +3,19 @@ import TestComponent from "@/components/TestComponent/TestComponent";
 import Footer from "@/components/Footer/Footer";
 import SignUp from "@/components/SignUp/SignUp";
 import Streams from "@/components/Streams/Streams";
+import HeroSection from "@/components/Hero/HeroSection";
+import Sponsors from "@/components/Sponsors/Sponsors";
+import PrizesSection from "@/components/Prizes/PrizesSection";
 
 export default function Home() {
   return (
-    <main className="bg-black text-white">
-      <h1 className="font-display text-4xl">VICHACK</h1>
-      <TestComponent></TestComponent>
-      <p className="text-purple-light">Poppins</p>
-      <SignUp></SignUp>
+    <main className="bg-black text-white w-screen max-w-full overflow-x-clip">
+      <HeroSection />
       <Streams></Streams>
-      <Footer></Footer>
+      <PrizesSection className="my-80" />
+      <Sponsors />
+      <SignUp />
+      <Footer />
     </main>
   );
 }

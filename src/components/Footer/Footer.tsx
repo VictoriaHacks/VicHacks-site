@@ -5,13 +5,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col mx-auto w-screen max-w-full items-center py-16 md:py-24 gap-12 border-t-2 border-t-white">
-      <Image
-        src={lightLogo}
-        alt="Logo"
-        height={100} // Set the desired height
-        layout="intrinsic" // or use "responsive" for responsive images
-      />
+    <footer className="flex flex-col mx-auto mt-24 w-screen max-w-full items-center py-16 md:py-24 gap-12 border-t-2 border-t-white">
+      <div className="relative h-12 w-full">
+        <Image src={lightLogo} alt="Logo" layout="fill" objectFit="contain" />
+      </div>
 
       <div className="flex flex-col gap-4 font-display text-xl items-center">
         <Link
