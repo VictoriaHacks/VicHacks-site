@@ -20,11 +20,11 @@ export default function GoldSponsorBlock(props: goldSponsorBlock) {
             src={props.img}
             alt={props.alt}
             fill
-            className="border rounded border-white object-cover"
+            className="border rounded border-white bg-white object-contain p-8"
           />
         </div>
         <div className="flex flex-col gap-2 justify-between md:w-1/2 w-full">
-          <h3 className=" font-display text-2xl">{props.title}</h3>
+          <h3 className=" font-extrabold text-4xl">{props.title}</h3>
           <p>{props.desc}</p>
           <Link
             href={props.link}

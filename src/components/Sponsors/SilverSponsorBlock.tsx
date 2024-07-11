@@ -19,11 +19,11 @@ export default function SilverSponsorBlock(props: silverSponsorBlock) {
             src={props.img}
             alt={props.alt}
             fill
-            className="border rounded border-white object-cover"
+            className="border rounded border-white object-contain p-8 bg-white"
           />
         </div>
         <div className="flex flex-col gap-2 justify-between w-full">
-          <h3 className=" font-display text-xl">{props.title}</h3>
+          <h3 className=" font-extrabold text-2xl">{props.title}</h3>
           <p className="text-sm">{props.desc}</p>
         </div>
       </div>

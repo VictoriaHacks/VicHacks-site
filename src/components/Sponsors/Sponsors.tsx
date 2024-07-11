@@ -7,25 +7,26 @@ import GoldSponsorBlock, { goldSponsorBlock } from "./GoldSponsorBlock";
 import SilverSponsorBlock, { silverSponsorBlock } from "./SilverSponsorBlock";
 
 // Sponsors
-import testImg from "@/assets/sponsors/test.png";
+import citadelLogo from "@/assets/sponsors/Citadel-Logo.webp";
+import janeStLogo from "@/assets/sponsors/JaneStreet.png";
 
 export default function Sponsors() {
   const goldSponsors: goldSponsorBlock[] = [
     {
-      title: "TESTER",
-      img: testImg,
-      alt: "test",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      link: "test",
+      title: "CITADEL",
+      img: citadelLogo,
+      alt: "Citadel Logo",
+      desc: "Our ambition is to be the most successful investment firm of all time. We strive to identify the highest and best uses of capital to generate superior long-term returns for the world’s preeminent public and private institutions.",
+      link: "https://www.citadel.com/",
     },
   ];
 
   const silverSponsors: silverSponsorBlock[] = [
     {
-      title: "TESTER",
-      img: testImg,
-      alt: "test",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      title: "Jane Street",
+      img: janeStLogo,
+      alt: "Jane Street Logo",
+      desc: "Solving the puzzle of global markets, Jane Street is a research-driven trading firm where curious people work together on deep problems",
     },
   ];
 
