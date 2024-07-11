@@ -1,3 +1,4 @@
+"use client";
 import { ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { motion, MotionValue } from "framer-motion";
@@ -19,6 +20,11 @@ export const GoogleGeminiEffect = ({
   pathLengths: MotionValue[];
   className?: string;
 }) => {
+  const horizontal_distance = 400;
+  const horizontal_right = 100;
+  const vertical_distance = 50;
+  const strokeWidth = 5;
+
   return (
     <div className={cn("sticky top-80", className)}>
       <svg
@@ -26,39 +32,56 @@ export const GoogleGeminiEffect = ({
         xmlns="http://www.w3.org/2000/svg"
         className="absolute -top-80 w-full"
       >
+        {/* First Path */}
         <motion.path
-          d="M0 26h20v1685H0z"
+          d="M0 0 L0 1000"
           stroke="#7459F1"
-          strokeWidth="2"
+          strokeWidth={strokeWidth}
           fill="none"
           initial={{ pathLength: 0 }}
           style={{ pathLength: pathLengths[0] }}
           transition={transition}
         />
 
+        {/* Second Path */}
         <motion.path
-          d="M40 56h199v20H40z M239 14v62h-20V14z M40 56h20v1286H40z"
+          d={`
+            M${horizontal_distance} 0
+            L${horizontal_distance} ${vertical_distance}
+            L${horizontal_right} ${vertical_distance}
+            L${horizontal_right} 1000`}
           stroke="#FF87BF"
-          strokeWidth="2"
+          strokeWidth={strokeWidth}
           fill="none"
           initial={{ pathLength: 0 }}
           style={{ pathLength: pathLengths[1] }}
           transition={transition}
         />
 
+        {/* Third Path */}
         <motion.path
-          d="M80 93h407v20H80z M487 5v108h-20V5z M80 93h20v867H80z"
+          d={`
+            M${horizontal_distance * 2} 0
+            L${horizontal_distance * 2} ${vertical_distance * 2}
+            L${horizontal_right*2} ${vertical_distance * 2}
+            L${horizontal_right*2} 1000`}
           stroke="#00B587"
-          strokeWidth="2"
+          strokeWidth={strokeWidth}
+          fill="none"
           initial={{ pathLength: 0 }}
           style={{ pathLength: pathLengths[2] }}
           transition={transition}
         />
 
+        {/* Fourth Path */}
         <motion.path
-          d="M120 138h620v20H120z M740 0v157h-20V0z M120 138h20v460h-20z"
+          d={`
+            M${horizontal_distance * 3} 0
+            L${horizontal_distance * 3} ${vertical_distance * 3}
+            L${horizontal_right*3} ${vertical_distance * 3}
+            L${horizontal_right*3} 1000`}
           stroke="#F4A62C"
-          strokeWidth="2"
+          strokeWidth={strokeWidth}
           fill="none"
           initial={{ pathLength: 0 }}
           style={{ pathLength: pathLengths[3] }}
