@@ -21,3 +21,7 @@
     text-wrap: balance;
   }
 }
+
+.bernoru-font {
+  font-family: var(--font-bernoru);
+}
