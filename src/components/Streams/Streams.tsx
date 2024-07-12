@@ -5,10 +5,38 @@ import { Stream } from './interfaces';
 import { StreamsScrollEffect } from './StreamsScrollEffect';
 
 const streamsData: Stream[] = [
-  { id: 1, name: "Mobile", image: "https://via.placeholder.com/800", description: "Description for Mobile" },
-  { id: 2, name: "AI", image: "https://via.placeholder.com/800", description: "Description for AI" },
-  { id: 3, name: "Blockchain", image: "https://via.placeholder.com/800", description: "Description for Blockchain" },
-  { id: 4, name: "Data Science", image: "https://via.placeholder.com/800", description: "Description for Data Science" },
+  {
+    id: 1,
+    name: 'BLOCKCHAIN',
+    color: '#F4A62C',
+    image: 'https://via.placeholder.com/800',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    id: 2,
+    name: 'BIG DATA',
+    color: '#00B587',
+    image: 'https://via.placeholder.com/800',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    id: 3,
+    name: 'AI',
+    color: '#FF87BF',
+    image: 'https://via.placeholder.com/800',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    id: 4,
+    name: 'MOBILE APP',
+    color: '#7459F1',
+    image: 'https://via.placeholder.com/800',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
 ];
 
 const Streams: React.FC = () => {
@@ -19,6 +47,6 @@ const Streams: React.FC = () => {
       <StreamsDetail streams={streamsData} />
     </section>
   );
-}
+};
 
 export default Streams;

@@ -21,7 +21,7 @@ const StreamsDetail: React.FC<StreamsDetailProps> = ({ streams }) => {
             />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            <h3 className="text-2xl font-bold">{stream.name}</h3>
+            <h3 className="text-2xl font-bold" style={{ color: stream.color }}>{stream.name}</h3>
             <p className="text-gray-700">{stream.description}</p>
           </div>
         </div>
