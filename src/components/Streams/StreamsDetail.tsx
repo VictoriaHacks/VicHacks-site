@@ -8,7 +8,7 @@ interface StreamsDetailProps {
 
 const StreamsDetail: React.FC<StreamsDetailProps> = ({ streams }) => {
   return (
-    <div>
+    <div className="relative">
       {streams.map((stream) => (
         <div key={stream.id} className="flex flex-col lg:flex-row items-center gap-4 bg-gray-100 p-4 rounded-lg mb-4">
           <div className="relative w-full lg:w-1/2 h-60">
