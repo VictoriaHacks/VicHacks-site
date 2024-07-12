@@ -10,14 +10,15 @@ export function StreamsScrollEffect() {
     offset: ["start start", "end start"],
   });
 
-  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
-  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
-  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
-  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+  // Define path lengths with increasing speeds
+  const pathLengthFirst = useTransform(scrollYProgress, [0, .7], [0, .7]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.75], [0, .8]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0, .9]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, .85], [0, 1]);
 
   return (
     <div
-      className="h-[50vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+      className="h-[100vh] bg-black w-full relative pt-40 overflow-clip"
       ref={ref}
     >
       <GoogleGeminiEffect

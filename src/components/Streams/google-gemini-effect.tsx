@@ -20,7 +20,7 @@ export const GoogleGeminiEffect = ({
   pathLengths: MotionValue[];
   className?: string;
 }) => {
-  const horizontal_distance = 400;
+  const horizontal_distance = 450;
   const horizontal_right = 100;
   const vertical_distance = 50;
   const strokeWidth = 5;
@@ -30,11 +30,13 @@ export const GoogleGeminiEffect = ({
       <svg
         viewBox="0 0 1440 1711"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute -top-80 w-full"
+        className="absolute -top-80 w-full outline-none"
       >
         {/* First Path */}
         <motion.path
-          d="M0 0 L0 1000"
+          d={`
+            M${100} 0
+            L${100} 1000`}
           stroke="#7459F1"
           strokeWidth={strokeWidth}
           fill="none"
@@ -47,9 +49,9 @@ export const GoogleGeminiEffect = ({
         <motion.path
           d={`
             M${horizontal_distance} 0
-            L${horizontal_distance} ${vertical_distance}
-            L${horizontal_right} ${vertical_distance}
-            L${horizontal_right} 1000`}
+            L${horizontal_distance} ${vertical_distance*2}
+            L${horizontal_right*2} ${vertical_distance*2}
+            L${horizontal_right*2} 1000`}
           stroke="#FF87BF"
           strokeWidth={strokeWidth}
           fill="none"
@@ -62,9 +64,9 @@ export const GoogleGeminiEffect = ({
         <motion.path
           d={`
             M${horizontal_distance * 2} 0
-            L${horizontal_distance * 2} ${vertical_distance * 2}
-            L${horizontal_right*2} ${vertical_distance * 2}
-            L${horizontal_right*2} 1000`}
+            L${horizontal_distance * 2} ${vertical_distance*3}
+            L${horizontal_right*3} ${vertical_distance*3}
+            L${horizontal_right*3} 1000`}
           stroke="#00B587"
           strokeWidth={strokeWidth}
           fill="none"
@@ -77,9 +79,9 @@ export const GoogleGeminiEffect = ({
         <motion.path
           d={`
             M${horizontal_distance * 3} 0
-            L${horizontal_distance * 3} ${vertical_distance * 3}
-            L${horizontal_right*3} ${vertical_distance * 3}
-            L${horizontal_right*3} 1000`}
+            L${horizontal_distance * 3} ${vertical_distance*4}
+            L${horizontal_right*4} ${vertical_distance*4}
+            L${horizontal_right*4} 1000`}
           stroke="#F4A62C"
           strokeWidth={strokeWidth}
           fill="none"
