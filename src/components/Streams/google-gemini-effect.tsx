@@ -23,6 +23,8 @@ export const GoogleGeminiEffect = ({
   const horizontal_distance = 450;
   const horizontal_right = 100;
   const vertical_distance = 50;
+  const screen_height = window.innerHeight * 0.4;
+  const component_height = 400;
   const strokeWidth = 5;
 
   return (
@@ -36,7 +38,7 @@ export const GoogleGeminiEffect = ({
         <motion.path
           d={`
             M${100} 0
-            L${100} 1000`}
+            L${100} ${screen_height}`}
           stroke="#7459F1"
           strokeWidth={strokeWidth}
           fill="none"
@@ -51,7 +53,7 @@ export const GoogleGeminiEffect = ({
             M${horizontal_distance} 0
             L${horizontal_distance} ${vertical_distance*2}
             L${horizontal_right*2} ${vertical_distance*2}
-            L${horizontal_right*2} 1000`}
+            L${horizontal_right*2} ${screen_height+component_height}`}
           stroke="#FF87BF"
           strokeWidth={strokeWidth}
           fill="none"
@@ -66,7 +68,7 @@ export const GoogleGeminiEffect = ({
             M${horizontal_distance * 2} 0
             L${horizontal_distance * 2} ${vertical_distance*3}
             L${horizontal_right*3} ${vertical_distance*3}
-            L${horizontal_right*3} 1000`}
+            L${horizontal_right*3} ${screen_height+component_height*2}`}
           stroke="#00B587"
           strokeWidth={strokeWidth}
           fill="none"
@@ -81,7 +83,7 @@ export const GoogleGeminiEffect = ({
             M${horizontal_distance * 3} 0
             L${horizontal_distance * 3} ${vertical_distance*4}
             L${horizontal_right*4} ${vertical_distance*4}
-            L${horizontal_right*4} 1000`}
+            L${horizontal_right*4} ${screen_height+component_height*3}`}
           stroke="#F4A62C"
           strokeWidth={strokeWidth}
           fill="none"
