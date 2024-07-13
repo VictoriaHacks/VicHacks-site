@@ -8,6 +8,9 @@ import HexagonImage from '@/assets/streams/hexagon.svg';
 import PlusImage from '@/assets/streams/plus.svg';
 import StarImage from '@/assets/streams/star.svg';
 
+import CenterImage from '@/assets/shapes/center.svg';
+import Image from 'next/image';
+
 const streamsData: Stream[] = [
   {
     id: 1,
@@ -51,6 +54,18 @@ const Streams: React.FC = () => {
   return (
     <section className="w-[80%] mx-auto">
       <StreamsShowcase streams={streamsData} />
+
+      {/* Heading */}
+      <div className="relative flex flex-col items-center gap-4 text-center mx-auto my-20">
+        <Image className="w-14 sm:w-20" src={CenterImage} alt="shape" />
+        <h2 className=" font-display text-2xl xs:text-3xl max-w-md sm:max-w-none sm:text-4xl">
+          TOTAL PRIZES: $5000
+        </h2>
+        <p className="max-w-md">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+        </p>
+      </div>
       {/* <StreamsScrollEffect /> */}
       <StreamsDetail streams={streamsData} />
     </section>

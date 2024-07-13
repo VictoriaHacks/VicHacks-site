@@ -1,11 +1,13 @@
-import Link from "next/link";
-import React from "react";
-import Image from "next/image";
-import shape1 from "@/assets/shapes/star.svg";
-import shape2 from "@/assets/shapes/star1.svg";
-import shape3 from "@/assets/shapes/star2.svg";
-import shape4 from "@/assets/shapes/star3.svg";
-import center from "@/assets/shapes/center.svg";
+import Link from 'next/link';
+import React from 'react';
+import Image from 'next/image';
+import shape1 from '@/assets/shapes/star.svg';
+import shape2 from '@/assets/shapes/star1.svg';
+import shape3 from '@/assets/shapes/star2.svg';
+import shape4 from '@/assets/shapes/star3.svg';
+import center from '@/assets/shapes/center.svg';
+
+import { LINKS } from '@/constants';
 
 export default function SignUp() {
   return (
@@ -20,8 +22,8 @@ export default function SignUp() {
           </p>
           <p>And don&apos;t forget the crazy prizes for all our streams!</p>
           <Link
-            href={"https://google.com"}
-            className="grid place-co3ntent-center px-12 py-2 font-bold bg-yellow-dark rounded hover:scale-105 transition-all"
+            href={LINKS.DEVPOST}
+            className="grid place-co3ntent-center px-12 py-2 font-bold text-black bg-yellow-light rounded hover:scale-105 transition-all"
           >
             SIGN UP
           </Link>

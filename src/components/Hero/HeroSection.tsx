@@ -1,21 +1,24 @@
-"use client";
-import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
-import PerspectiveGrid from "@/components/Hero/PerspectiveGrid";
-import Button from "@/components/common/Button";
-import Link from "next/link";
-import ParallaxAnimator from "./ParallaxAnimator";
+'use client';
+import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
+import PerspectiveGrid from '@/components/Hero/PerspectiveGrid';
+import Button from '@/components/common/Button';
+import Link from 'next/link';
+import ParallaxAnimator from './ParallaxAnimator';
 
 // Images
-import LogoImage from "@/assets/logos/light.png";
-import DiamondsImage from "@/assets/hero-shapes/diamonds.svg";
-import FlowerImage from "@/assets/hero-shapes/flower.svg";
-import FlowerThinImage from "@/assets/hero-shapes/flowerThin.svg";
-import GridCircleImage from "@/assets/hero-shapes/gridCircle.svg";
-import GridShapesImage from "@/assets/hero-shapes/gridShapes.svg";
-import LightningImage from "@/assets/hero-shapes/lightning.svg";
-import SawBladeImage from "@/assets/hero-shapes/sawBlade.svg";
-import Navbar from "../Navbar/Navbar";
+import LogoImage from '@/assets/logos/light.png';
+import DiamondsImage from '@/assets/hero-shapes/diamonds.svg';
+import FlowerImage from '@/assets/hero-shapes/flower.svg';
+import FlowerThinImage from '@/assets/hero-shapes/flowerThin.svg';
+import GridCircleImage from '@/assets/hero-shapes/gridCircle.svg';
+import GridShapesImage from '@/assets/hero-shapes/gridShapes.svg';
+import LightningImage from '@/assets/hero-shapes/lightning.svg';
+import SawBladeImage from '@/assets/hero-shapes/sawBlade.svg';
+import Navbar from '../Navbar/Navbar';
+
+// Links
+import { LINKS } from '@/constants';
 
 // The center line is at 47.1% of the grid's height
 const GRID_CENTER_OFFSET = 0.471;
@@ -47,7 +50,7 @@ export default function HeroSection() {
 
   useEffect(() => {
     setLogoPosition();
-    window.addEventListener("resize", setLogoPosition);
+    window.addEventListener('resize', setLogoPosition);
   }, [gridRef, logoRef]);
 
   return (
@@ -75,11 +78,11 @@ export default function HeroSection() {
           alt="VicHack Logo"
           className="w-[300px] xs:w-[360px] md:w-[480px] mx-auto"
           style={{
-            paddingTop: logoY + "px",
+            paddingTop: logoY + 'px',
           }}
         />
 
-        <Button href="#" className="mx-auto">
+        <Button href={LINKS.DEVPOST} className="mx-auto">
           SIGNUP
         </Button>
 
