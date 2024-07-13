@@ -3,10 +3,10 @@ import StreamsShowcase from './StreamsShowcase';
 import StreamsDetail from './StreamsDetail';
 import { Stream } from './interfaces';
 import { StreamsScrollEffect } from './StreamsScrollEffect';
-import FlowerImage from "@/assets/streams/flower.svg";
-import HexagonImage from "@/assets/streams/hexagon.svg";
-import PlusImage from "@/assets/streams/plus.svg";
-import StarImage from "@/assets/streams/star.svg";
+import FlowerImage from '@/assets/streams/flower.svg';
+import HexagonImage from '@/assets/streams/hexagon.svg';
+import PlusImage from '@/assets/streams/plus.svg';
+import StarImage from '@/assets/streams/star.svg';
 
 const streamsData: Stream[] = [
   {
@@ -51,7 +51,7 @@ const Streams: React.FC = () => {
   return (
     <section className="w-[80%] mx-auto">
       <StreamsShowcase streams={streamsData} />
-      <StreamsScrollEffect />
+      {/* <StreamsScrollEffect /> */}
       <StreamsDetail streams={streamsData} />
     </section>
   );
