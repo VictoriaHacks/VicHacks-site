@@ -135,7 +135,7 @@ export default function PrizesSection({ className }: { className?: string }) {
           {/* Yellow */}
           <div className="flex gap-4 xs:gap-8 sm:gap-10">
             <div className="w-max space-y-2">
-              <h4 className="font-display text-lg sm:text-xl text-yellow-light">-----Prize</h4>
+              <h4 className="font-display text-lg sm:text-xl text-yellow-light">----- Prize</h4>
               <p className="max-w-md">Win additional prizes that will be revealed closer to the hackathon date</p>
             </div>
             <div className="flex flex-1 bg-yellow-light items-center p-2 xs:p-4">
@@ -146,7 +146,7 @@ export default function PrizesSection({ className }: { className?: string }) {
           {/* Orange */}
           <div className="flex gap-4 xs:gap-8 sm:gap-10">
             <div className="w-max space-y-2">
-              <h4 className="font-display text-lg sm:text-xl text-orange-light">-----Prize</h4>
+              <h4 className="font-display text-lg sm:text-xl text-orange-light">----- Prize</h4>
               <p className="max-w-md">Win additional prizes that will be revealed closer to the hackathon date</p>
             </div>
             <div className="flex flex-1 bg-orange-light items-center p-2 xs:p-4">
