@@ -52,18 +52,19 @@ const streamsData: Stream[] = [
 
 const Streams: React.FC = () => {
   return (
-    <section className="w-[80%] mx-auto">
+    <section className="px-4 max-w-screen-lg mx-auto">
       <StreamsShowcase streams={streamsData} />
 
       {/* Heading */}
       <div className="relative flex flex-col items-center gap-4 text-center mx-auto my-20">
         <Image className="w-14 sm:w-20" src={CenterImage} alt="shape" />
         <h2 className=" font-display text-2xl xs:text-3xl max-w-md sm:max-w-none sm:text-4xl">
-          TOTAL PRIZES: $5000
+          STREAMS
         </h2>
-        <p className="max-w-md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+        <p className="max-w-lg">
+          At VICHACK we have 4 streams for participants to enter under. Each one
+          has their own seperate prizes and represent an area that we believe
+          will help shape the future.
         </p>
       </div>
       {/* <StreamsScrollEffect /> */}
