@@ -58,7 +58,7 @@ export default function Navbar() {
       transition={{ duration: 0.3 }}
     >
       <div className="space-y-1">
-        <p className="">11/06 - 15/06</p>
+        <p className="">09/08 - 18/08</p>
         <h3 className="text-xl sm:text-2xl font-display">VICHACK</h3>
         <Image
           className="max-w-12 xs:max-w-16"
