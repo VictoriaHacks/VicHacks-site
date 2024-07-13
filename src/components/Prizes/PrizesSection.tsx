@@ -90,21 +90,21 @@ export default function PrizesSection({ className }: { className?: string }) {
       <div className="relative grid grid-cols-1 max-w-sm mx-auto sm:max-w-none sm:grid-cols-2 gap-10 gap-y-20 md:block md:columns-2 md:gap-20 lg:gap-40 [&>*]:break-inside-avoid-column">
         {/* Third place */}
         <div className="flex flex-col gap-8 w-full md:mt-40 row-start-2 sm:col-start-2 sm:row-start-1">
-          <ThirdPlaceCard className="w-full" />
+          <MostCreativeCard className="w-full" />
           <div className="space-y-2 flex-1 max-w-sm my-auto">
-            <h4 className="font-display text-xl text-pink-light">$150</h4>
+            <h4 className="font-display text-xl text-yellow-light">$300</h4>
             <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
         </div>
 
         {/* Best blockchain */}
-        <div className="flex flex-col gap-8 w-full md:mt-40">
+        {/* <div className="flex flex-col gap-8 w-full md:mt-40">
           <BestBlockchainCard className="w-full" />
           <div className="space-y-2 flex-1 max-w-sm my-auto">
             <h4 className="font-display text-xl text-purple-light">$300</h4>
             <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Second place */}
         <div className="flex flex-col gap-8 w-full row-start-1 sm:col-start-1 sm:row-start-1">
@@ -116,14 +116,44 @@ export default function PrizesSection({ className }: { className?: string }) {
         </div>
 
         {/* Most creative card */}
-        <div className="flex flex-col gap-8 w-full row-start-3 sm:col-start-1 sm:row-start-2 md:mt-40">
+        {/* <div className="flex flex-col gap-8 w-full row-start-3 sm:col-start-1 sm:row-start-2 md:mt-40">
           <MostCreativeCard className="w-full" />
           <div className="space-y-2 flex-1 max-w-sm my-auto">
             <h4 className="font-display text-xl text-yellow-light">$300</h4>
             <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
-        </div>
+        </div> */}
+      </div>
 
+      <div className="border-[6px] border-white mt-20">
+        <div className="relative border-b-[6px] border-white p-4 overflow-hidden">
+          <div className="absolute w-28 sm:w-32 aspect-square bg-orange-light rounded-[100%] right-4 bottom-[-20%]"></div>
+          <h3 className="relative font-display text-center sm:text-left text-lg sm:text-2xl md:text-3xl mb-10">SECRET PRIZES: $???</h3>
+          <p className="relative sm:max-w-md text-center sm:text-left">Win additional prizes that will be revealed closer to the hackathon date</p>
+        </div>
+        <div className="py-8 sm:py-10 px-4 sm:px-8 space-y-8 sm:space-y-10 min-h-96">
+          {/* Yellow */}
+          <div className="flex gap-4 xs:gap-8 sm:gap-10">
+            <div className="w-max space-y-2">
+              <h4 className="font-display text-lg sm:text-xl text-yellow-light">-----Prize</h4>
+              <p className="max-w-md">Win additional prizes that will be revealed closer to the hackathon date</p>
+            </div>
+            <div className="flex flex-1 bg-yellow-light items-center p-2 xs:p-4">
+              <h4 className="font-display text-xl sm:text-2xl text-black ml-auto mt-auto sm:mt-0">$???</h4>
+            </div>
+          </div>
+
+          {/* Orange */}
+          <div className="flex gap-4 xs:gap-8 sm:gap-10">
+            <div className="w-max space-y-2">
+              <h4 className="font-display text-lg sm:text-xl text-orange-light">-----Prize</h4>
+              <p className="max-w-md">Win additional prizes that will be revealed closer to the hackathon date</p>
+            </div>
+            <div className="flex flex-1 bg-orange-light items-center p-2 xs:p-4">
+              <h4 className="font-display text-xl sm:text-2xl text-black ml-auto mt-auto sm:mt-0">$???</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
