@@ -1,8 +1,12 @@
+import { StaticImageData } from 'next/image';
+
 export interface Stream {
-    id: number;
-    name: string;
-    color: string;
-    shape: string;
-    image: string;
-    description: string;
+  id: number;
+  name: string;
+  color: string;
+  bgColor: string;
+  shape: string;
+  image: StaticImageData;
+  smallImage: StaticImageData;
+  description: string;
 }
