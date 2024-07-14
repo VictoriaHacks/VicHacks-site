@@ -115,35 +115,35 @@ export default function HeroSection() {
 
       <ParallaxAnimator
         className="left-[15vw] top-[max(100px,20svh)] md:left-[30vw] md:top-[max(185px,25svh)]"
-        speed={500}
+        speed={700}
       >
         <Image src={SawBladeImage} alt="Shape" />
       </ParallaxAnimator>
 
       <ParallaxAnimator
         className="left-[65vw] top-[max(222px,30svh)] hidden md:block"
-        speed={600}
+        speed={800}
       >
         <Image src={LightningImage} alt="Shape" />
       </ParallaxAnimator>
 
       <ParallaxAnimator
         className="left-[70vw] top-[max(259px,65svh)] md:left-[10vw] md:top-[max(259px,35svh)]"
-        speed={200}
+        speed={400}
       >
         <Image src={FlowerImage} alt="Shape" />
       </ParallaxAnimator>
 
       <ParallaxAnimator
         className="left-[80vw] top-[max(370px,50svh)] hidden md:block"
-        speed={200}
+        speed={400}
       >
         <Image src={GridCircleImage} alt="Shape" />
       </ParallaxAnimator>
 
       <ParallaxAnimator
         className="left-[70vw] top-[max(100px,18svh)] md:left-[20vw] md:top-[max(481px,65svh)]"
-        speed={700}
+        speed={900}
       >
         <Image src={FlowerThinImage} alt="Shape" />
       </ParallaxAnimator>
