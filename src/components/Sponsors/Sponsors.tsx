@@ -7,17 +7,17 @@ import GoldSponsorBlock, { goldSponsorBlock } from "./GoldSponsorBlock";
 import SilverSponsorBlock, { silverSponsorBlock } from "./SilverSponsorBlock";
 
 // Sponsors
-import citadelLogo from "@/assets/sponsors/Citadel-Logo.webp";
+import citadelLogo from "@/assets/sponsors/CitSec-Logo.webp";
 import janeStLogo from "@/assets/sponsors/JaneStreet.png";
 
 export default function Sponsors() {
   const goldSponsors: goldSponsorBlock[] = [
     {
-      title: "CITADEL",
+      title: "CITADEL Securities",
       img: citadelLogo,
       alt: "Citadel Logo",
       desc: "Our ambition is to be the most successful investment firm of all time. We strive to identify the highest and best uses of capital to generate superior long-term returns for the world’s preeminent public and private institutions.",
-      link: "https://www.citadel.com/",
+      link: "https://www.citadelsecurities.com/",
     },
   ];
 

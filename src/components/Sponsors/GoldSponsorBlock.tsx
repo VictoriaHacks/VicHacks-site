@@ -25,7 +25,7 @@ export default function GoldSponsorBlock(props: goldSponsorBlock) {
           />
         </div>
         <div className="flex flex-col gap-2 justify-between md:w-1/2 w-full">
-          <h3 className=" font-extrabold text-4xl">{props.title}</h3>
+          <h3 className=" font-extrabold text-3xl">{props.title}</h3>
           <p>{props.desc}</p>
           <Button href={props.link}>LEARN MORE</Button>
         </div>
