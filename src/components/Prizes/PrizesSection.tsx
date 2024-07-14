@@ -3,10 +3,10 @@ import CenterImage from '@/assets/shapes/center.svg';
 import clsx from 'clsx';
 import GoldenRatioGrid from './GoldenRatioGrid';
 
-function FirstPlaceCard({ className }: { className?: string }) {
+function BestStreamCard({ className }: { className?: string }) {
   return (
     <div className={clsx('max-w-sm', className)}>
-      <p className="pl-3 pb-3">FIRST PLACE</p>
+      <p className="pl-3 pb-3">BEST IN STREAM</p>
       <div className="relative flex border-[6px] border-white p-4 aspect-[1.15] overflow-hidden">
         <div className="absolute w-[50%] aspect-[1.1] bg-green-light rounded-[100%] left-4 bottom-[-20%]"></div>
         <h3 className="relative font-display text-4xl lg:text-5xl ml-auto">
@@ -17,14 +17,14 @@ function FirstPlaceCard({ className }: { className?: string }) {
   );
 }
 
-function SecondPlaceCard({ className }: { className?: string }) {
+function AiCard({ className }: { className?: string }) {
   return (
     <div className={clsx('max-w-sm', className)}>
-      <p className="pl-3 pb-3">SECOND PLACE</p>
+      <p className="pl-3 pb-3">BEST IN AI</p>
       <div className="relative flex border-[6px] border-white p-4 aspect-[1.1] overflow-hidden">
         <div className="absolute w-[50%] aspect-[1.1] bg-orange-light rounded-[100%] right-[-15%] bottom-4"></div>
         <h3 className="relative font-display text-2xl xs:text-3xl sm:text-4xl lg:text-5xl ml-auto">
-          2ND
+          1ST
         </h3>
       </div>
     </div>
@@ -94,25 +94,25 @@ export default function PrizesSection({ className }: { className?: string }) {
         <p className="max-w-md">
           We have over 10 planned cash prizes and more to announce in the
           future! Increase your chances of winning with prizes in different
-          categories
+          categories, win big by stacking prizes!
         </p>
       </div>
 
-      {/* First place */}
+      {/* Stream Awards */}
       <div className="relative grid md:flex gap-8 w-full max-w-sm md:max-w-none mb-20 md:mb-0 mx-auto md:mx-0">
-        <FirstPlaceCard className="w-full" />
+        <BestStreamCard className="w-full" />
         <div className="space-y-2 flex-1 max-w-md my-auto">
-          <h4 className="font-display text-xl text-green-light">$500</h4>
+          <h4 className="font-display text-xl text-green-light">4 x $500</h4>
           <p className="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+            Four teams will each be awarded $500, one from each of the following
+            streams: Blockchain, AI, Big Data, and Mobile.
           </p>
         </div>
       </div>
 
       <div className="relative grid grid-cols-1 max-w-sm mx-auto sm:max-w-none sm:grid-cols-2 gap-10 gap-y-20 md:block md:columns-2 md:gap-20 lg:gap-40 [&>*]:break-inside-avoid-column">
         {/* Third place */}
-        <div className="flex flex-col gap-8 w-full md:mt-40 row-start-2 sm:col-start-2 sm:row-start-1">
+        {/* <div className="flex flex-col gap-8 w-full md:mt-40 row-start-2 sm:col-start-2 sm:row-start-1">
           <MostCreativeCard className="w-full" />
           <div className="space-y-2 flex-1 max-w-sm my-auto">
             <h4 className="font-display text-xl text-yellow-light">$300</h4>
@@ -121,7 +121,7 @@ export default function PrizesSection({ className }: { className?: string }) {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Best blockchain */}
         {/* <div className="flex flex-col gap-8 w-full md:mt-40">
@@ -136,8 +136,8 @@ export default function PrizesSection({ className }: { className?: string }) {
         </div> */}
 
         {/* Second place */}
-        <div className="flex flex-col gap-8 w-full row-start-1 sm:col-start-1 sm:row-start-1">
-          <SecondPlaceCard className="w-full" />
+        {/* <div className="flex flex-col gap-8 w-full row-start-1 sm:col-start-1 sm:row-start-1">
+          <AiCard className="w-full" />
           <div className="space-y-2 flex-1 max-w-sm my-auto">
             <h4 className="font-display text-xl text-orange-light">$250</h4>
             <p className="">
@@ -145,7 +145,7 @@ export default function PrizesSection({ className }: { className?: string }) {
               eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
             </p>
           </div>
-        </div>
+        </div> */}
 
         {/* Most creative card */}
         {/* <div className="flex flex-col gap-8 w-full row-start-3 sm:col-start-1 sm:row-start-2 md:mt-40">
@@ -164,7 +164,7 @@ export default function PrizesSection({ className }: { className?: string }) {
         <div className="relative border-b-[6px] border-white p-4 overflow-hidden">
           <div className="absolute w-28 sm:w-32 aspect-square bg-orange-light rounded-[100%] right-4 bottom-[-20%]"></div>
           <h3 className="relative font-display text-center sm:text-left text-lg sm:text-2xl md:text-3xl mb-10">
-            SECRET PRIZES: $???
+            SECRET PRIZES: $1000+
           </h3>
           <p className="relative sm:max-w-md text-center sm:text-left">
             Win additional prizes that will be revealed closer to the hackathon
@@ -176,11 +176,11 @@ export default function PrizesSection({ className }: { className?: string }) {
           <div className="flex gap-4 xs:gap-8 sm:gap-10">
             <div className="w-max space-y-2">
               <h4 className="font-display text-lg sm:text-xl text-yellow-light">
-                ----- Prize
+                ??? Prize
               </h4>
               <p className="max-w-md">
-                Win additional prizes that will be revealed closer to the
-                hackathon date
+                Prize details and content will be revealed closer to the
+                hackathon date!
               </p>
             </div>
             <div className="flex flex-1 bg-yellow-light items-center p-2 xs:p-4">
@@ -194,14 +194,32 @@ export default function PrizesSection({ className }: { className?: string }) {
           <div className="flex gap-4 xs:gap-8 sm:gap-10">
             <div className="w-max space-y-2">
               <h4 className="font-display text-lg sm:text-xl text-orange-light">
-                ----- Prize
+                ??? Prize
               </h4>
               <p className="max-w-md">
-                Win additional prizes that will be revealed closer to the
-                hackathon date
+                Prize details and content will be revealed closer to the
+                hackathon date!
               </p>
             </div>
             <div className="flex flex-1 bg-orange-light items-center p-2 xs:p-4">
+              <h4 className="font-display text-xl sm:text-2xl text-black ml-auto mt-auto sm:mt-0">
+                $???
+              </h4>
+            </div>
+          </div>
+
+          {/* Yellow */}
+          <div className="flex gap-4 xs:gap-8 sm:gap-10">
+            <div className="w-max space-y-2">
+              <h4 className="font-display text-lg sm:text-xl text-yellow-light">
+                ??? Prize
+              </h4>
+              <p className="max-w-md">
+                Prize details and content will be revealed closer to the
+                hackathon date!
+              </p>
+            </div>
+            <div className="flex flex-1 bg-yellow-light items-center p-2 xs:p-4">
               <h4 className="font-display text-xl sm:text-2xl text-black ml-auto mt-auto sm:mt-0">
                 $???
               </h4>
