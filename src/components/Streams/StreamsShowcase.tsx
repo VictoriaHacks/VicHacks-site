@@ -8,7 +8,7 @@ interface StreamsShowcaseProps {
 
 const StreamsShowcase: React.FC<StreamsShowcaseProps> = ({ streams }) => {
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid lg:gap-4 grid-cols-2 lg:grid-cols-4">
       {streams.map((stream) => (
         <div key={stream.id} className="bg-gray-200 p-4 rounded">
           <div className="relative w-full h-40">
@@ -16,8 +16,8 @@ const StreamsShowcase: React.FC<StreamsShowcaseProps> = ({ streams }) => {
               src={stream.smallImage}
               alt={stream.name}
               layout="fill"
-              objectFit="cover"
-              className="z-10 rounded-lg hover:-translate-y-4 transition-all"
+              objectFit="contain"
+              className="z-10 rounded-lg md:hover:-translate-y-4 transition-all"
             />
             <div
               className={`rounded absolute bottom-0 w-full h-16 ${stream.bgColor}`}
