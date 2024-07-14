@@ -92,8 +92,9 @@ export default function PrizesSection({ className }: { className?: string }) {
           TOTAL PRIZES: $3000+
         </h2>
         <p className="max-w-md">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+          We have over 10 planned cash prizes and more to announce in the
+          future! Increase your chances of winning with prizes in different
+          categories
         </p>
       </div>
 
@@ -127,7 +128,10 @@ export default function PrizesSection({ className }: { className?: string }) {
           <BestBlockchainCard className="w-full" />
           <div className="space-y-2 flex-1 max-w-sm my-auto">
             <h4 className="font-display text-xl text-purple-light">$300</h4>
-            <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p className="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+            </p>
           </div>
         </div> */}
 
@@ -148,7 +152,10 @@ export default function PrizesSection({ className }: { className?: string }) {
           <MostCreativeCard className="w-full" />
           <div className="space-y-2 flex-1 max-w-sm my-auto">
             <h4 className="font-display text-xl text-yellow-light">$300</h4>
-            <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p className="">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
+            </p>
           </div>
         </div> */}
       </div>

@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { useAnimation, motion } from "framer-motion";
-import Link from "next/link";
-import Image from "next/image";
-import TrianglesImage from "@/assets/hero-shapes/triangles.svg";
+import React, { useEffect, useState } from 'react';
+import { useAnimation, motion } from 'framer-motion';
+import Link from 'next/link';
+import Image from 'next/image';
+import TrianglesImage from '@/assets/hero-shapes/triangles.svg';
 
 const scrolltoHash = function (element_id: string) {
   const element = document.getElementById(element_id);
   element?.scrollIntoView({
-    behavior: "smooth",
-    block: "end",
-    inline: "nearest",
+    behavior: 'smooth',
+    block: 'end',
+    inline: 'nearest',
   });
 };
 
@@ -24,7 +24,7 @@ export default function Navbar() {
     const handleScroll = () => {
       if (window.scrollY > lastScrollY + scrollSensitivity) {
         // Scrolling down
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 1280) {
           controls.start({ opacity: 0 }); // Adjust this value to move the navbar out of view
         }
         setLastScrollY(window.scrollY);
@@ -41,24 +41,24 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [lastScrollY, controls]);
 
   return (
     <motion.div
       className={`fixed w-full top-0 flex justify-between p-5 xs:p-10 max-w-full z-20 ${
-        startScroll ? "bg-transparent" : "bg-black md:bg-transparent"
+        startScroll ? 'bg-transparent' : 'bg-black xl:bg-transparent'
       }`}
       initial={{ opacity: 1 }}
       animate={controls}
       transition={{ duration: 0.3 }}
     >
       <div className="space-y-1">
-        <p className="">11/06 - 15/06</p>
+        <p className="">09/08 - 18/08</p>
         <h3 className="text-xl sm:text-2xl font-display">VICHACK</h3>
         <Image
           className="max-w-12 xs:max-w-16"
@@ -68,14 +68,14 @@ export default function Navbar() {
       </div>
       <div className="flex gap-1 flex-col text-right font-bold sticky top-0">
         <div
-          onClick={() => scrolltoHash("hero")}
+          onClick={() => scrolltoHash('hero')}
           className=" cursor-pointer hover:border-b-2 border-yellow-light transition-all"
         >
           HOME
         </div>
         {/* <Link href="#">EDUCATION</Link> */}
         <div
-          onClick={() => scrolltoHash("signUp")}
+          onClick={() => scrolltoHash('signUp')}
           className=" cursor-pointer hover:border-b-2 border-green-light transition-all"
         >
           SIGN UP

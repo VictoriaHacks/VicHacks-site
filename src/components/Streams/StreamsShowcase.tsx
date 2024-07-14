@@ -13,17 +13,20 @@ const StreamsShowcase: React.FC<StreamsShowcaseProps> = ({ streams }) => {
         <div key={stream.id} className="bg-gray-200 p-4 rounded">
           <div className="relative w-full h-40">
             <Image
-              src={stream.image}
+              src={stream.smallImage}
               alt={stream.name}
               layout="fill"
               objectFit="cover"
-              className="rounded-lg"
+              className="z-10 rounded-lg hover:-translate-y-4 transition-all"
             />
+            <div
+              className={`rounded absolute bottom-0 w-full h-16 ${stream.bgColor}`}
+            ></div>
           </div>
         </div>
       ))}
     </div>
   );
-}
+};
 
 export default StreamsShowcase;
