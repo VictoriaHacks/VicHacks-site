@@ -82,7 +82,7 @@ export default function HeroSection() {
           }}
         />
 
-        <Button href={LINKS.DEVPOST} className="mx-auto text-xl">
+        <Button href={LINKS.SIGNUP} className="mx-auto text-xl">
           SIGNUP
         </Button>
 

@@ -22,7 +22,7 @@ export default function SignUp() {
           </p>
           <p>And don&apos;t forget the crazy prizes for all our streams!</p>
           <Link
-            href={LINKS.DEVPOST}
+            href={LINKS.SIGNUP}
             className="grid place-co3ntent-center px-12 py-2 font-bold text-black bg-yellow-light rounded hover:scale-105 transition-all"
           >
             SIGN UP
