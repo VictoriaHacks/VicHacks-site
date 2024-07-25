@@ -35,7 +35,7 @@ const streamsData: Stream[] = [
   },
   {
     id: 2,
-    name: 'BIG DATA',
+    name: 'DATA SCIENCE',
     color: '#00B587',
     bgColor: 'bg-green-light',
     shape: PlusImage,

@@ -105,7 +105,7 @@ export default function PrizesSection({ className }: { className?: string }) {
           <h4 className="font-display text-xl text-green-light">4 x $500</h4>
           <p className="">
             Four teams will each be awarded $500, one from each of the following
-            streams: Blockchain, AI, Big Data, and Mobile.
+            streams: Blockchain, AI, Data Science, and Mobile.
           </p>
         </div>
       </div>
