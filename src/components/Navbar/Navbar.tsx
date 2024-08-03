@@ -67,13 +67,20 @@ export default function Navbar() {
         />
       </div>
       <div className="flex gap-1 flex-col text-right font-bold sticky top-0">
-        <div
-          onClick={() => scrolltoHash('hero')}
-          className=" cursor-pointer hover:border-b-2 border-yellow-light transition-all"
+        <Link
+          href="/"
+          className='className=" cursor-pointer hover:border-b-2 border-yellow-light transition-all"
+'
         >
           HOME
-        </div>
-        {/* <Link href="#">EDUCATION</Link> */}
+        </Link>
+        <Link
+          href="/education"
+          className='className=" cursor-pointer hover:border-b-2 border-purple-light transition-all"
+'
+        >
+          EDUCATION
+        </Link>
         <div
           onClick={() => scrolltoHash('signUp')}
           className=" cursor-pointer hover:border-b-2 border-green-light transition-all"

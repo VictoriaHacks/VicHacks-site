@@ -62,8 +62,6 @@ export default function HeroSection() {
         opacity: logoY ? 1 : 0,
       }}
     >
-      <Navbar />
-
       {/* Grid image, the position of all other static elements are relative to the center of the grid */}
       <PerspectiveGrid
         ref={gridRef}
