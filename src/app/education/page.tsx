@@ -26,7 +26,7 @@ export default function page() {
           use!
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 max-w-screen-xl mx-auto py-16 px-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 max-w-screen-xl mx-auto py-16 px-4">
         <EducationBox
           href="https://turquoise-exoplanet-f92.notion.site/VicHack-Mobile-Development-8dd8cbffa89a4e53a2aebc12265de40c"
           title="Mobile Development"
@@ -52,8 +52,8 @@ export default function page() {
           href="https://ds-cubed.notion.site/VicHack-Machine-Learning-Resource-Pack-d7a22adff4304fd49a245b1575cd62d3"
           title="Artificial Intelligence"
           body="Official Vichack Notion Guide for Artificial Intelligence Stream"
-          borderStyle="border-purple-light bg-purple-light"
-          buttonStyle=" bg-purple-dark "
+          borderStyle="border-pink-light bg-pink-light"
+          buttonStyle=" bg-pink-dark "
         ></EducationBox>
       </div>
       <Footer />

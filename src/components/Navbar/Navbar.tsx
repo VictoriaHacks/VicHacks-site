@@ -81,12 +81,13 @@ export default function Navbar() {
         >
           EDUCATION
         </Link>
-        <div
-          onClick={() => scrolltoHash('signUp')}
-          className=" cursor-pointer hover:border-b-2 border-green-light transition-all"
+        <Link
+          href="/#signUp"
+          className='className=" cursor-pointer hover:border-b-2 border-green-light transition-all"
+'
         >
           SIGN UP
-        </div>
+        </Link>
       </div>
     </motion.div>
   );
