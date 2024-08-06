@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Button from '@/components/common/Button';
-import Footer from '@/components/Footer/Footer';
-import Navbar from '@/components/Navbar/Navbar';
-import React from 'react';
-import Image from 'next/image';
-import TrianglesImage from '@/assets/hero-shapes/triangles.svg';
-import EducationBox from '@/components/EducationBox/EducationBox';
+import Button from "@/components/common/Button";
+import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import React from "react";
+import Image from "next/image";
+import TrianglesImage from "@/assets/hero-shapes/triangles.svg";
+import EducationBox from "@/components/EducationBox/EducationBox";
 
 export default function page() {
   return (
@@ -49,7 +49,7 @@ export default function page() {
           buttonStyle=" bg-yellow-dark "
         ></EducationBox>
         <EducationBox
-          href="https://ds-cubed.notion.site/VicHack-Machine-Learning-Resource-Pack-d7a22adff4304fd49a245b1575cd62d3"
+          href="https://www.notion.so/AI-Resource-Pack-c69bdc6b0b8f4cdfa0a0be0c3f66d3e2?pvs=4"
           title="Artificial Intelligence"
           body="Official Vichack Notion Guide for Artificial Intelligence Stream"
           borderStyle="border-pink-light bg-pink-light"
