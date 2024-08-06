@@ -1,6 +1,6 @@
-import React from 'react';
-import { Stream } from './interfaces';
-import Image from 'next/image';
+import React from "react";
+import { Stream } from "./interfaces";
+import Image from "next/image";
 
 interface StreamsDetailProps {
   streams: Stream[];
@@ -11,6 +11,7 @@ const StreamsDetail: React.FC<StreamsDetailProps> = ({ streams }) => {
     <div className="relative">
       {streams.map((stream) => (
         <div
+          id={stream.id.toString()}
           key={stream.id}
           className="flex flex-col lg:flex-row items-center gap-4 bg-gray-100 p-4 rounded-lg mb-4"
         >

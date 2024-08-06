@@ -1,6 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import { Stream } from './interfaces';
+import React from "react";
+import Image from "next/image";
+import { Stream } from "./interfaces";
+import Link from "next/link";
 
 interface StreamsShowcaseProps {
   streams: Stream[];
@@ -10,7 +11,11 @@ const StreamsShowcase: React.FC<StreamsShowcaseProps> = ({ streams }) => {
   return (
     <div className="grid lg:gap-4 grid-cols-2 lg:grid-cols-4">
       {streams.map((stream) => (
-        <div key={stream.id} className="bg-gray-200 p-4 rounded">
+        <Link
+          href={stream.href}
+          key={stream.id}
+          className="bg-gray-200 p-4 rounded"
+        >
           <div className="relative w-full h-40">
             <Image
               src={stream.smallImage}
@@ -23,7 +28,7 @@ const StreamsShowcase: React.FC<StreamsShowcaseProps> = ({ streams }) => {
               className={`rounded absolute bottom-0 w-full h-16 ${stream.bgColor}`}
             ></div>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import { StaticImageData } from 'next/image';
+import { StaticImageData } from "next/image";
 
 export interface Stream {
   id: number;
@@ -9,4 +9,5 @@ export interface Stream {
   image: StaticImageData;
   smallImage: StaticImageData;
   description: string;
+  href: string;
 }

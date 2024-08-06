@@ -35,6 +35,7 @@ const streamsData: Stream[] = [
     smallImage: BlockchainTransparent,
     description:
       "This stream focuses on all Crypto, Blockchain and Web3 technology. Utilise the security and transparency of blockchain technologies to create something that can help our future!",
+    href: "#1",
   },
   {
     id: 2,
@@ -46,6 +47,7 @@ const streamsData: Stream[] = [
     smallImage: BigDataTransparent,
     description:
       "Perfect for all the data analysts out there! Take a large set of information and data and present a technology that is able to process the information and provide real world benefits!",
+    href: "#2",
   },
   {
     id: 3,
@@ -57,6 +59,7 @@ const streamsData: Stream[] = [
     smallImage: AITransparent,
     description:
       "The big thing in tech right now! Create or integrate AI into your product to help change how we behave by creating something useful to shape the future!",
+    href: "#3",
   },
   {
     id: 4,
@@ -68,6 +71,7 @@ const streamsData: Stream[] = [
     smallImage: MobileTransparent,
     description:
       "With mobile applications becoming more popular than ever, create a mobile app that taps into the accessibility and convenience of our everyday devices to improve our future!",
+    href: "#4",
   },
 ];
 
