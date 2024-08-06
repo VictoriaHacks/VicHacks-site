@@ -1,11 +1,12 @@
-import Image from 'next/image';
-import CenterImage from '@/assets/shapes/center.svg';
-import clsx from 'clsx';
-import GoldenRatioGrid from './GoldenRatioGrid';
+import Image from "next/image";
+import CenterImage from "@/assets/shapes/center.svg";
+import clsx from "clsx";
+import GoldenRatioGrid from "./GoldenRatioGrid";
+import MiniPrizeBox from "../MiniPrizeBox/MiniPrizeBox";
 
 function BestStreamCard({ className }: { className?: string }) {
   return (
-    <div className={clsx('max-w-sm', className)}>
+    <div className={clsx("max-w-sm", className)}>
       <p className="pl-3 pb-3">BEST IN STREAM</p>
       <div className="relative flex border-[6px] border-white p-4 aspect-[1.15] overflow-hidden">
         <div className="absolute w-[50%] aspect-[1.1] bg-green-light rounded-[100%] left-4 bottom-[-20%]"></div>
@@ -19,7 +20,7 @@ function BestStreamCard({ className }: { className?: string }) {
 
 function AiCard({ className }: { className?: string }) {
   return (
-    <div className={clsx('max-w-sm', className)}>
+    <div className={clsx("max-w-sm", className)}>
       <p className="pl-3 pb-3">BEST IN AI</p>
       <div className="relative flex border-[6px] border-white p-4 aspect-[1.1] overflow-hidden">
         <div className="absolute w-[50%] aspect-[1.1] bg-orange-light rounded-[100%] right-[-15%] bottom-4"></div>
@@ -33,7 +34,7 @@ function AiCard({ className }: { className?: string }) {
 
 function ThirdPlaceCard({ className }: { className?: string }) {
   return (
-    <div className={clsx('max-w-sm', className)}>
+    <div className={clsx("max-w-sm", className)}>
       <p className="pl-3 pb-3">THIRD PLACE</p>
       <div className="relative flex border-[6px] border-white p-4 aspect-[1.1] overflow-hidden">
         <div className="absolute w-[50%] aspect-[0.9] bg-pink-light rounded-[100%] left-[18%] top-[-20%]"></div>
@@ -47,7 +48,7 @@ function ThirdPlaceCard({ className }: { className?: string }) {
 
 function MostCreativeCard({ className }: { className?: string }) {
   return (
-    <div className={clsx('max-w-sm', className)}>
+    <div className={clsx("max-w-sm", className)}>
       <p className="pl-3 pb-3">GENERAL AWARDS</p>
       <div className="relative flex border-[6px] border-white p-4 aspect-[1.1] overflow-hidden">
         <div className="absolute w-[50%] aspect-[1.1] bg-yellow-light rounded-[100%] right-[-15%] bottom-4"></div>
@@ -63,7 +64,7 @@ function MostCreativeCard({ className }: { className?: string }) {
 
 function BestBlockchainCard({ className }: { className?: string }) {
   return (
-    <div className={clsx('max-w-sm', className)}>
+    <div className={clsx("max-w-sm", className)}>
       <p className="pl-3 pb-3">STREAM AWARD</p>
       <div className="relative flex border-[6px] border-white p-4 aspect-[1.1] overflow-hidden">
         <div className="absolute w-[50%] aspect-[1.1] bg-purple-light rounded-[100%] left-[-15%] top-1/2 -translate-y-1/2"></div>
@@ -79,7 +80,7 @@ function BestBlockchainCard({ className }: { className?: string }) {
 
 export default function PrizesSection({ className }: { className?: string }) {
   return (
-    <div className={clsx('relative max-w-full w-max mx-auto p-4', className)}>
+    <div className={clsx("relative max-w-full w-max mx-auto p-4", className)}>
       {/* Background image */}
       <div className="absolute w-screen h-[calc(100%+160px)] sm:h-full left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 sm:top-20 sm:-translate-y-0 overflow-hidden opacity-60">
         <GoldenRatioGrid className="absolute sm:min-w-full aspect-auto h-full left-1/2 -translate-x-1/2" />
@@ -164,7 +165,7 @@ export default function PrizesSection({ className }: { className?: string }) {
         <div className="relative border-b-[6px] border-white p-4 overflow-hidden">
           <div className="absolute w-28 sm:w-32 aspect-square bg-orange-light rounded-[100%] right-4 bottom-[-20%]"></div>
           <h3 className="relative font-display text-center sm:text-left text-lg sm:text-2xl md:text-3xl mb-10">
-            SECRET PRIZES: $1000+
+            ADDITIONAL PRIZES: $1000
           </h3>
           <p className="relative sm:max-w-md text-center sm:text-left">
             Win additional prizes that will be revealed closer to the hackathon
@@ -172,59 +173,69 @@ export default function PrizesSection({ className }: { className?: string }) {
           </p>
         </div>
         <div className="py-8 sm:py-10 px-4 sm:px-8 space-y-8 sm:space-y-10 min-h-96">
-          {/* Yellow */}
-          <div className="flex gap-4 xs:gap-8 sm:gap-10">
-            <div className="w-max space-y-2">
-              <h4 className="font-display text-lg sm:text-xl text-yellow-light">
-                ??? Prize
-              </h4>
-              <p className="max-w-md">
-                Prize details and content will be revealed closer to the
-                hackathon date!
-              </p>
-            </div>
-            <div className="flex flex-1 bg-yellow-light items-center p-2 xs:p-4">
-              <h4 className="font-display text-xl sm:text-2xl text-black ml-auto mt-auto sm:mt-0">
-                $???
-              </h4>
-            </div>
-          </div>
+          <MiniPrizeBox
+            title="Best Accessibility Feature"
+            body="??? More details coming soon!"
+            prize="$150"
+            textColor="text-orange-light"
+            bgColor="bg-orange-light"
+          />
 
-          {/* Orange */}
-          <div className="flex gap-4 xs:gap-8 sm:gap-10">
-            <div className="w-max space-y-2">
-              <h4 className="font-display text-lg sm:text-xl text-orange-light">
-                ??? Prize
-              </h4>
-              <p className="max-w-md">
-                Prize details and content will be revealed closer to the
-                hackathon date!
-              </p>
-            </div>
-            <div className="flex flex-1 bg-orange-light items-center p-2 xs:p-4">
-              <h4 className="font-display text-xl sm:text-2xl text-black ml-auto mt-auto sm:mt-0">
-                $???
-              </h4>
-            </div>
-          </div>
+          <MiniPrizeBox
+            title="Most Innovative Solution"
+            body="??? More details coming soon!"
+            prize="$150"
+            textColor="text-orange-light"
+            bgColor="bg-orange-light"
+          />
 
-          {/* Yellow */}
-          <div className="flex gap-4 xs:gap-8 sm:gap-10">
-            <div className="w-max space-y-2">
-              <h4 className="font-display text-lg sm:text-xl text-yellow-light">
-                ??? Prize
-              </h4>
-              <p className="max-w-md">
-                Prize details and content will be revealed closer to the
-                hackathon date!
-              </p>
-            </div>
-            <div className="flex flex-1 bg-yellow-light items-center p-2 xs:p-4">
-              <h4 className="font-display text-xl sm:text-2xl text-black ml-auto mt-auto sm:mt-0">
-                $???
-              </h4>
-            </div>
-          </div>
+          <MiniPrizeBox
+            title="Best Video Submission"
+            body="??? More details coming soon!"
+            prize="$150"
+            textColor="text-orange-light"
+            bgColor="bg-orange-light"
+          />
+
+          <MiniPrizeBox
+            title="Best Highschool Team"
+            body="??? More details coming soon!"
+            prize="$150"
+            textColor="text-orange-light"
+            bgColor="bg-orange-light"
+          />
+
+          <MiniPrizeBox
+            title="Peoples Choice Prize"
+            body="??? More details coming soon!"
+            prize="$100"
+            textColor="text-yellow-light"
+            bgColor="bg-yellow-light"
+          />
+
+          <MiniPrizeBox
+            title="Best Social Impact"
+            body="??? More details coming soon!"
+            prize="$100"
+            textColor="text-yellow-light"
+            bgColor="bg-yellow-light"
+          />
+
+          <MiniPrizeBox
+            title="Best Design"
+            body="??? More details coming soon!"
+            prize="$100"
+            textColor="text-yellow-light"
+            bgColor="bg-yellow-light"
+          />
+
+          <MiniPrizeBox
+            title="Best Social Media Post"
+            body="??? More details coming soon!"
+            prize="$100"
+            textColor="text-yellow-light"
+            bgColor="bg-yellow-light"
+          />
         </div>
       </div>
     </div>
